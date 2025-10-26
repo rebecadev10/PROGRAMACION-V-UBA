@@ -1,0 +1,126 @@
+/*
+ * CSS Específico para el Módulo Conversor de Divisas (Nombres en Español)
+ */
+
+/* 1. Estilos de Contenedores y Labels */
+.contenedor-conversor {
+    /* Ajuste para ancho máximo si la tarjeta base no lo define */
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.grupo-entrada, .grupo-selector {
+    margin-bottom: 1rem;
+}
+
+.etiqueta-entrada {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: #4b5563; /* Gris oscuro para las etiquetas */
+    font-size: 0.9em;
+}
+
+/* 2. Estilos de Inputs y Selects */
+.control-formulario {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db; /* Gris claro */
+    border-radius: 8px;
+    font-size: 1.1em;
+    box-sizing: border-box; 
+    transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.control-formulario:focus {
+     border-color: #10b981; /* Color principal (Esmeralda) */
+     box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.5);
+     outline: none;
+}
+
+/* 3. Estilos de la Fila de Selectores y Botón de Intercambio */
+.fila-selectores {
+    display: flex;
+    gap: 1rem;
+}
+
+.grupo-selector {
+    flex: 1;
+}
+
+.contenedor-intercambio {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 8px;
+}
+
+.boton-intercambio {
+    padding: 8px;
+    border-radius: 50%;
+    border: none;
+    background-color: #e5e7eb; /* Gris claro */
+    cursor: pointer;
+    color: #4b5563; 
+    transition: background-color 0.15s, transform 0.15s;
+}
+
+.boton-intercambio:hover {
+    background-color: #d1d5db;
+    transform: scale(1.05);
+}
+
+/* 4. Estilos del Botón Principal */
+.boton-convertir {
+    width: 100%;
+    margin-top: 1rem;
+    /* La clase .boton ya debe manejar el color de fondo y texto */
+}
+.boton-convertir:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* 5. Estilos de Resultados y Mensajes */
+.caja-resultado {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.etiqueta-resultado {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #10b981; /* Color principal (Esmeralda) */
+    margin-bottom: 4px;
+}
+
+.texto-resultado {
+    font-size: 1.8em;
+    font-weight: 700;
+    /* Color inicial se define en JS */
+    min-height: 30px;
+}
+
+.tasa-cambio {
+    font-size: 0.75em;
+    color: #6b7280;
+    margin-top: 8px;
+    min-height: 14px;
+}
+
+.area-mensajes {
+    margin-top: 1rem;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+/* Clases de estado que serán añadidas por JavaScript */
+.mensaje-error {
+    background-color: #fee2e2; /* Fondo rojo claro */
+    color: #dc2626; /* Texto rojo oscuro */
+}
+.mensaje-informacion {
+    background-color: #dbeafe; /* Fondo azul claro */
+    color: #2563eb; /* Texto azul oscuro */
+}

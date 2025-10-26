@@ -1,0 +1,152 @@
+[
+    {
+        "pregunta": "¿En qué estado venezolano se encuentra la Basílica de Nuestra Señora de Chiquinquirá (La Chinita)?",
+        "opciones": ["Carabobo", "Lara", "Zulia", "Miranda"],
+        "respuesta_correcta": "Zulia"
+    },
+    {
+        "pregunta": "¿Qué ciudad es conocida como la 'Ciudad Jardín de Venezuela'?",
+        "opciones": ["Valencia", "Maracay", "Barquisimeto", "Mérida"],
+        "respuesta_correcta": "Maracay"
+    },
+    {
+        "pregunta": "¿Cuál es el nombre del sistema montañoso más alto de Venezuela?",
+        "opciones": ["Macizo Guayanés", "Cordillera de la Costa", "Sierra Nevada de Mérida", "Cordillera Oriental"],
+        "respuesta_correcta": "Sierra Nevada de Mérida"
+    },
+    {
+        "pregunta": "¿Quién compuso la música del Himno Nacional de Venezuela?",
+        "opciones": ["Vicente Salias", "Juan Vicente Torrealba", "Juan José Landaeta", "Teresa Carreño"],
+        "respuesta_correcta": "Juan José Landaeta"
+    },
+    {
+        "pregunta": "¿Qué cuerpo de agua es el más grande de Venezuela y Suramérica?",
+        "opciones": ["Lago de Valencia", "Golfo de Paria", "Lago de Maracaibo", "Mar Caribe"],
+        "respuesta_correcta": "Lago de Maracaibo"
+    },
+    {
+        "pregunta": "¿En qué año se fundó la Universidad Central de Venezuela (UCV)?",
+        "opciones": ["1721", "1826", "1751", "1696"],
+        "respuesta_correcta": "1721"
+    },
+    {
+        "pregunta": "¿Cuál es la flor nacional de Venezuela?",
+        "opciones": ["Rosa", "Orquídea", "Girasol", "Cayena"],
+        "respuesta_correcta": "Orquídea"
+    },
+    {
+        "pregunta": "¿Qué libertador venezolano se le conoce como 'El Gran Mariscal de Ayacucho'?",
+        "opciones": ["Simón Bolívar", "Francisco de Miranda", "Antonio José de Sucre", "José Félix Ribas"],
+        "respuesta_correcta": "Antonio José de Sucre"
+    },
+    {
+        "pregunta": "¿Qué estado venezolano es el mayor productor de café?",
+        "opciones": ["Mérida", "Táchira", "Trujillo", "Lara"],
+        "respuesta_correcta": "Táchira"
+    },
+    {
+        "pregunta": "¿Cuál es el dulce tradicional venezolano hecho a base de papelón, queso rallado y especias, popular en Semana Santa?",
+        "opciones": ["Majarete", "Jalea de Mango", "Torrejas", "Chupe"],
+        "respuesta_correcta": "Torrejas"
+    },
+    {
+        "pregunta": "¿En qué ciudad nació Simón Bolívar?",
+        "opciones": ["Caracas", "Maracaibo", "Valencia", "Ciudad Bolívar"],
+        "respuesta_correcta": "Caracas"
+    },
+    {
+        "pregunta": "¿Qué tipo de gaita es típica de la época navideña en el Zulia?",
+        "opciones": ["Gaita Margariteña", "Gaita de Tambora", "Gaita Zuliana", "Gaita Oriental"],
+        "respuesta_correcta": "Gaita Zuliana"
+    },
+    {
+        "pregunta": "¿Cuál es el nombre del pez de agua dulce que habita en el Río Orinoco y es el más grande de Suramérica?",
+        "opciones": ["Cachama", "Morocoto", "Payara", "Arapaima"],
+        "respuesta_correcta": "Arapaima"
+    },
+    {
+        "pregunta": "¿Qué día se celebra el Día de la Resistencia Indígena en Venezuela?",
+        "opciones": ["12 de Octubre", "5 de Julio", "24 de Junio", "19 de Abril"],
+        "respuesta_correcta": "12 de Octubre"
+    },
+    {
+        "pregunta": "¿Qué animal es el emblema nacional de Venezuela junto al caballo en el escudo?",
+        "opciones": ["Águila", "León", "Cóndor", "Caballo"],
+        "respuesta_correcta": "Caballo"
+    },
+    {
+        "pregunta": "¿A qué se refiere el término 'Pabellón Criollo'?",
+        "opciones": ["Una danza tradicional", "El plato nacional", "Un tipo de casa colonial", "Una bandera antigua"],
+        "respuesta_correcta": "El plato nacional"
+    },
+    {
+        "pregunta": "¿Qué estado venezolano es conocido por sus vastas zonas llaneras y producción de ganado?",
+        "opciones": ["Lara", "Zulia", "Apure", "Sucre"],
+        "respuesta_correcta": "Apure"
+    },
+    {
+        "pregunta": "¿Quién fue el primer presidente de Venezuela después de la disolución de la Gran Colombia?",
+        "opciones": ["Simón Bolívar", "José Antonio Páez", "Francisco de Miranda", "Carlos Soublette"],
+        "respuesta_correcta": "José Antonio Páez"
+    },
+    {
+        "pregunta": "¿Cuál es el árbol nacional de Venezuela?",
+        "opciones": ["Ceiba", "Araguaney", "Samán", "Caoba"],
+        "respuesta_correcta": "Araguaney"
+    },
+    {
+        "pregunta": "¿Qué ciudad venezolana es conocida como la capital musical de Venezuela?",
+        "opciones": ["Maracaibo", "Barquisimeto", "Caracas", "Puerto La Cruz"],
+        "respuesta_correcta": "Barquisimeto"
+    },
+    {
+        "pregunta": "¿Cuál es el nombre que recibe el pan típico redondo y con queso, popular en el desayuno venezolano?",
+        "opciones": ["Canilla", "Cachito", "Pan de Jamón", "Pan Andino"],
+        "respuesta_correcta": "Cachito"
+    },
+    {
+        "pregunta": "¿Cuántas franjas de color tiene la bandera de Venezuela?",
+        "opciones": ["Dos", "Tres", "Cuatro", "Cinco"],
+        "respuesta_correcta": "Tres"
+    },
+    {
+        "pregunta": "¿A qué región geográfica pertenece la Isla de Margarita?",
+        "opciones": ["Región Andina", "Región Central", "Región Insular", "Región Oriental"],
+        "respuesta_correcta": "Región Insular"
+    },
+    {
+        "pregunta": "¿Qué nombre recibe el fenómeno atmosférico de descargas eléctricas que ocurre en el Zulia?",
+        "opciones": ["El Rayo Catatumbo", "El Relámpago Zuliano", "La Lluvia Eterna", "La Tormenta de Maracaibo"],
+        "respuesta_correcta": "El Rayo Catatumbo"
+    },
+    {
+        "pregunta": "¿Qué es la 'Arepa Reina Pepiada'?",
+        "opciones": ["Arepa con pernil", "Arepa con cazón", "Arepa con pollo, aguacate y mayonesa", "Arepa dulce con anís"],
+        "respuesta_correcta": "Arepa con pollo, aguacate y mayonesa"
+    },
+    {
+        "pregunta": "¿Qué color representa el valor y la independencia en la bandera venezolana?",
+        "opciones": ["Amarillo", "Azul", "Rojo", "Blanco"],
+        "respuesta_correcta": "Rojo"
+    },
+    {
+        "pregunta": "¿Cuál es el principal mineral extraído en la Región Guayana?",
+        "opciones": ["Cobre", "Oro", "Carbón", "Bauxita"],
+        "respuesta_correcta": "Bauxita"
+    },
+    {
+        "pregunta": "¿Cuál es el baile típico venezolano caracterizado por el zapateo y el uso del cuatro y el arpa?",
+        "opciones": ["Merengue", "Tambor", "Joropo", "Vals"],
+        "respuesta_correcta": "Joropo"
+    },
+    {
+        "pregunta": "¿Cómo se llama el Cabo donde se encuentran el Mar Caribe y el Océano Atlántico, en el extremo oriental de Venezuela?",
+        "opciones": ["Cabo San Román", "Cabo Tres Puntas", "Punta Peñas", "Cabo Codera"],
+        "respuesta_correcta": "Cabo Tres Puntas"
+    },
+    {
+        "pregunta": "¿Qué personaje histórico venezolano se le atribuye la frase 'Moral y Luces son nuestras primeras necesidades'?",
+        "opciones": ["Simón Rodríguez", "Andrés Bello", "Simón Bolívar", "Francisco de Miranda"],
+        "respuesta_correcta": "Simón Bolívar"
+    }
+]

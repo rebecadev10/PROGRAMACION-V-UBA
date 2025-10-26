@@ -1,0 +1,115 @@
+/*
+ * CSS Específico para el Módulo Cuestionario Interactivo (Nombres en Español)
+ */
+
+.contenedor-quiz {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.info-progreso {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: #4b5563;
+}
+
+.contador-pregunta, .puntuacion-actual {
+    font-weight: 600;
+}
+
+.separador-quiz {
+    border: 0;
+    height: 1px;
+    background-color: #e5e7eb;
+    margin-bottom: 20px;
+}
+
+.texto-pregunta {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 15px;
+}
+
+/* Contenedor de Opciones */
+.contenedor-opciones {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Botones de Opción */
+.boton-opcion {
+    padding: 12px 15px;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    background-color: white;
+    text-align: left;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s, border-color 0.2s;
+    /* Usa el estilo de fuente de tu dashboard */
+    font-family: inherit; 
+}
+
+.boton-opcion:hover:not(:disabled) {
+    background-color: #f3f4f6;
+    border-color: #9ca3af;
+}
+
+/* 3. Estilos de Feedback (Inyectados por JS) */
+
+.feedback-mensaje {
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.feedback-correcto {
+    background-color: #d1fae5; /* Verde muy claro */
+    color: #065f46; /* Verde oscuro */
+    border: 1px solid #34d399;
+}
+
+.feedback-incorrecto {
+    background-color: #fee2e2; /* Rojo muy claro */
+    color: #991b1b; /* Rojo oscuro */
+    border: 1px solid #f87171;
+}
+
+/* Estilo para el botón de Siguiente */
+.boton-siguiente {
+    width: 100%;
+    /* La clase .boton debe proveer los estilos primarios */
+    opacity: 0.6; /* Inicia atenuado */
+}
+.boton-siguiente:enabled {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* 4. Estilos de Resultado Final */
+.area-resultado-final {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.titulo-final {
+    font-size: 1.5em;
+    color: #10b981;
+    margin-bottom: 15px;
+}
+
+.resumen-puntuacion {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+}
+
+.boton-reiniciar {
+    /* La clase .boton debe proveer los estilos primarios */
+    width: auto;
+}

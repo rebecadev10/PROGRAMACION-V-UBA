@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Divisas "Economía Global"</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tareas.css">
+    
+    <link rel="stylesheet" href="./css/divisas.css">
+    
+</head>
+<body>
+     <nav class="barra-navegacion">
+        <div class="contenedor-navegacion">
+           
+            <ul class="menu-navegacion">
+                <li><a href="index.html" class="enlace-navegacion">Inicio</a></li>
+                <li><a href="tareas.html" class="enlace-navegacion">Tareas</a></li>
+                <li><a href="citas.html" class="enlace-navegacion">Cita del dia</a></li>
+                <li><a href="cuestionario.html" class="enlace-navegacion">Trivia</a></li>
+               
+            </ul>
+        </div>
+    </nav>
+    <main class="contenedor-principal">
+        <h1>Economía Global 💹</h1>
+        
+        <div id="contenedor-conversor" class="tarjeta contenedor-conversor">
+            
+            <h2 class="text-xl font-bold mb-4">Conversor de Divisas</h2>
+            <p style="color: #6b7280; margin-bottom: 1.5rem;">Convierte entre las principales divisas.</p>
+            
+            <div>
+                
+                <div class="grupo-entrada">
+                    <label for="cantidad" class="etiqueta-entrada">Cantidad a Convertir</label>
+                    <input type="number" id="cantidad" value="100" min="0.01" step="0.01"
+                           class="control-formulario"
+                           placeholder="Ej. 100.00">
+                </div>
+
+                <div class="fila-selectores">
+                    
+                    <div class="grupo-selector">
+                        <label for="monedaOrigen" class="etiqueta-entrada">De</label>
+                        <select id="monedaOrigen" class="control-formulario">
+                            </select>
+                    </div>
+                    
+                    <div class="contenedor-intercambio">
+                        <button id="botonIntercambio" title="Intercambiar Monedas" class="boton-intercambio">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 16 4 4 4-4"/><path d="M7 20V4"/><path d="m21 8-4-4-4 4"/><path d="M17 4v16"/></svg>
+                        </button>
+                    </div>
+
+                    <div class="grupo-selector">
+                        <label for="monedaDestino" class="etiqueta-entrada">A</label>
+                        <select id="monedaDestino" class="control-formulario">
+                            </select>
+                    </div>
+                </div>
+
+                <button id="botonConvertir" class="boton boton-convertir">
+                    Convertir
+                </button>
+            </div>
+            
+            <div id="cajaResultado" class="caja-resultado">
+                <p class="etiqueta-resultado">Resultado de la Conversión:</p>
+                <div id="salidaResultado" class="texto-resultado">
+                    100.00 EUR
+                </div>
+                <p id="tasaCambio" class="tasa-cambio">
+                    </p>
+            </div>
+
+            <div id="areaMensajes" class="area-mensajes" style="display: none;">
+                <p id="textoMensaje"></p>
+            </div>
+            
+        </div>
+    </main>
+
+    
+    <footer class="pie-pagina">
+        <p>Desarrollado por Rebeca Rodríguez | UBA - Programación V | 2025</p>
+    </footer>
+</body>
+</html>
+<script src="./js/conversor.js"></script>

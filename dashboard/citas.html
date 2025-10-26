@@ -1,0 +1,54 @@
+<!-- Ejercicio 6 un administrador de tareas basico  Rebeca Rodriguez 30051282 -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Sumativa 1 - Rebeca Rodríguez
+
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tareas.css">
+
+</head>
+<body>
+   
+     <nav class="barra-navegacion">
+        <div class="contenedor-navegacion">
+           
+            <ul class="menu-navegacion">
+                <li><a href="index.html" class="enlace-navegacion">Inicio</a></li>
+                <li><a href="tareas.html" class="enlace-navegacion">Tareas</a></li>
+                <li><a href="divisas.html" class="enlace-navegacion">Conversor</a></li>
+                <li><a href="cuestionario.html" class="enlace-navegacion">Trivia</a></li>
+               
+            </ul>
+        </div>
+    </nav>
+   <main class="contenedor-principal">
+    <h1>Citas Inspiradoras 📚</h1>
+    
+    <div class="tarjeta">
+        <h2>Cita del Día</h2>
+        <button class="boton" id="btnCitaDelDia">Obtener Cita Inspiradora</button>
+    </div>
+
+    <div id="modalCita" class="modal" style="display:none;">
+        <div class="modal-contenido tarjeta">
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            <p id="citaContenido" style="font-style: italic; font-size: 1.2em;"></p>
+            <p id="citaAutor" style="text-align: right; font-weight: 500;"></p>
+        </div>
+    </div>
+</main>
+
+
+<footer class="pie-pagina">
+        <p>Desarrollado por Rebeca Rodríguez | UBA - Programación V | 2025</p>
+    </footer>
+</body>
+</html>
+<script src="./js/controlCitas.js"></script>

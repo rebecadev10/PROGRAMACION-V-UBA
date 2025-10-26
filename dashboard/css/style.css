@@ -1,0 +1,471 @@
+/*
+ * style.css - Archivo de estilos base, consolidado y optimizado.
+ * Autor: Rebeca Rodríguez - [Tu Cédula]
+ */
+
+/* ======================================================= */
+/* 1. Variables CSS (Theme/Design System) */
+/* ======================================================= */
+:root {
+    /* Colores principales */
+    --color-principal: #8a2be2; /* Azul violeta */
+    --color-principal-oscuro: #7b1fa2;
+    --color-principal-claro: #ca9eff;
+    --color-secundario: #cc3e95; /* Rosa */
+    --color-texto: #333333;
+    --color-texto-claro: #666666;
+    --color-fondo: #ffffff;
+    --color-superficie: #f8f9fa; /* Fondo claro para tarjetas */
+    --color-borde: #e0e0e0;
+    --color-blanco: #ffffff;
+    
+    /* Colores de estado (Generalmente utilizados en botones o mensajes) */
+    --color-exito: #28a745;
+    --color-error: #dc3545;
+    --color-advertencia: #ffc107;
+    --color-info: #17a2b8;
+    
+    /* Colores de Resalte Específicos (Para la Landing Page) */
+    --color-resalte-principal: #e312a4; /* Verde esmeralda (usado en encabezado-bienvenida) */
+    --color-resalte-oscuro: #66003f;
+    --color-resalte-claro: #ecfdf5; /* Fondo técnico */
+    
+    /* Tipografía */
+    --fuente-principal: 'Poppins', Arial, sans-serif;
+    --tamano-fuente-base: 16px;
+    --tamano-fuente-pequeno: 14px;
+    --tamano-fuente-grande: 18px;
+    --tamano-fuente-extra-grande: 24px;
+    --tamano-fuente-muy-grande: 32px;
+    --grosor-fuente-normal: 400;
+    --grosor-fuente-medio: 500;
+    --grosor-fuente-negrita: 700;
+    
+    /* Espaciado */
+    --espaciado-pequeno: 8px;
+    --espaciado-mediano: 16px;
+    --espaciado-grande: 24px;
+    --espaciado-muy-grande: 32px;
+    --espaciado-extra-grande: 48px;
+    
+    /* Bordes */
+    --radio-borde: 4px;
+    --radio-borde-grande: 8px;
+    --radio-borde-redondo: 50px;
+    
+    /* Sombras */
+    --sombra-suave: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --sombra-media: 0 4px 8px rgba(0, 0, 0, 0.12);
+    --sombra-fuerte: 0 8px 16px rgba(0, 0, 0, 0.15);
+    
+    /* Márgenes */
+    --margen-contenido: 30px;
+}
+
+/* ======================================================= */
+/* 2. Reset y Estilos Base */
+/* ======================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: var(--tamano-fuente-base);
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+    line-height: 1.6;
+}
+
+/* 3. Títulos y Elementos Estructurales */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-principal);
+    margin-bottom: var(--espaciado-grande);
+    font-weight: var(--grosor-fuente-negrita);
+}
+
+h1 { font-size: var(--tamano-fuente-muy-grande); }
+h2 { font-size: var(--tamano-fuente-extra-grande); }
+h3 { font-size: var(--tamano-fuente-grande); }
+
+img {
+    max-width: 100%;
+    width: 550px;
+    height: auto;
+    border-radius: var(--radio-borde-grande);
+    box-shadow: var(--sombra-suave);
+    margin-bottom: var(--espaciado-grande);
+    object-fit: contain;
+}
+
+/* ======================================================= */
+/* 4. Layout Principal (Contenedores y Navegación) */
+/* ======================================================= */
+
+/* Contenedor principal de la aplicación. Se ajusta para el layout de landing. */
+.contenedor-principal {
+    max-width: 1200px; /* Redefinido a 1200px para centrar el contenido */
+    margin: 0 auto;
+    padding: var(--espaciado-extra-grande) var(--margen-contenido);
+    text-align: center;
+}
+
+/* Mensaje de bienvenida (Genérico, si aplica) */
+.mensaje-bienvenida {
+    font-size: var(--tamano-fuente-grande);
+    margin-bottom: var(--espaciado-muy-grande);
+    line-height: 1.8;
+}
+
+/* Barra de navegación (sticky) */
+.barra-navegacion {
+    background-color: var(--color-principal);
+    width: 100%;
+    padding: var(--espaciado-mediano) 0;
+    box-shadow: var(--sombra-media);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.contenedor-navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 var(--margen-contenido);
+}
+
+.logo {
+    color: var(--color-blanco);
+    font-size: var(--tamano-fuente-extra-grande);
+    font-weight: var(--grosor-fuente-negrita);
+    text-decoration: none;
+}
+
+.menu-navegacion {
+    display: flex;
+    list-style: none;
+    gap: var(--espaciado-muy-grande);
+}
+
+.enlace-navegacion {
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-size: var(--tamano-fuente-base);
+    font-weight: var(--grosor-fuente-medio);
+    transition: color 0.3s ease;
+}
+
+.enlace-navegacion:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Pie de Página */
+.pie-pagina {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: var(--espaciado-muy-grande);
+    margin-top: auto;
+}
+
+/* ======================================================= */
+/* 5. Formularios y Controles */
+/* ======================================================= */
+.grupo-formulario {
+    margin-bottom: var(--espaciado-grande);
+    text-align: left;
+    position: relative;
+}
+
+.etiqueta-formulario {
+    display: block;
+    margin-bottom: var(--espaciado-pequeno);
+    font-weight: var(--grosor-fuente-medio);
+    color: var(--color-texto);
+}
+
+.control-formulario {
+    width: 100%;
+    padding: var(--espaciado-mediano);
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio-borde);
+    font-family: var(--fuente-principal);
+    font-size: var(--tamano-fuente-base);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.control-formulario:focus {
+    outline: none;
+    border-color: var(--color-principal);
+    box-shadow: 0 0 0 2px rgba(138, 43, 226, 0.2);
+}
+
+.control-formulario.error {
+    border-color: var(--color-error);
+    box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.2);
+}
+
+textarea.control-formulario {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* ======================================================= */
+/* 6. Botones (Base y Variantes) */
+/* ======================================================= */
+.boton {
+    display: inline-block;
+    padding: var(--espaciado-mediano) var(--espaciado-muy-grande);
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    border: none;
+    border-radius: var(--radio-borde-redondo);
+    font-family: var(--fuente-principal);
+    font-size: var(--tamano-fuente-base);
+    font-weight: var(--grosor-fuente-medio);
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+.boton:hover {
+    background-color: var(--color-principal-oscuro);
+    transform: translateY(-2px);
+}
+
+.boton:active {
+    transform: translateY(0);
+}
+
+.boton-secundario {
+    background-color: var(--color-superficie);
+    color: var(--color-texto);
+}
+
+.boton-secundario:hover {
+    background-color: var(--color-borde);
+}
+
+.boton-exito { background-color: var(--color-exito); }
+.boton-error { background-color: var(--color-error); }
+.boton-advertencia { 
+    background-color: var(--color-advertencia);
+    color: var(--color-texto); 
+}
+.boton-info { background-color: var(--color-info); }
+
+/* ======================================================= */
+/* 7. Tarjetas y Componentes Comunes */
+/* ======================================================= */
+.tarjeta {
+    background-color: var(--color-superficie);
+    border-radius: var(--radio-borde-grande);
+    padding: var(--espaciado-muy-grande);
+    box-shadow: var(--sombra-suave);
+    margin-bottom: var(--espaciado-grande);
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ======================================================= */
+/* 8. Utilidades (UTILITY CLASSES) */
+/* ======================================================= */
+.texto-centrado { text-align: center; }
+.ancho-completo { width: 100%; }
+
+/* Clases de Espaciado (mt, mb, p) */
+.mt-1 { margin-top: var(--espaciado-pequeno); }
+.mt-2 { margin-top: var(--espaciado-mediano); }
+.mt-3 { margin-top: var(--espaciado-grande); }
+.mt-4 { margin-top: var(--espaciado-muy-grande); }
+.mt-5 { margin-top: var(--espaciado-extra-grande); }
+
+.mb-1 { margin-bottom: var(--espaciado-pequeno); }
+.mb-2 { margin-bottom: var(--espaciado-mediano); }
+.mb-3 { margin-bottom: var(--espaciado-grande); }
+.mb-4 { margin-bottom: var(--espaciado-muy-grande); }
+.mb-5 { margin-bottom: var(--espaciado-extra-grande); }
+
+.p-1 { padding: var(--espaciado-pequeno); }
+.p-2 { padding: var(--espaciado-mediano); }
+.p-3 { padding: var(--espaciado-grande); }
+.p-4 { padding: var(--espaciado-muy-grande); }
+.p-5 { padding: var(--espaciado-extra-grande); }
+
+/* ======================================================= */
+/* 9. Estilos de la Página de Inicio (LANDING PAGE) 🏠 */
+/* ======================================================= */
+
+/* Nota: Se han añadido variables para los colores de la landing para mejorar la coherencia */
+
+/* Ocultar elementos no deseados en la landing */
+.sidebar { display: none; }
+
+/* 9.1 Encabezado de Bienvenida */
+.encabezado-bienvenida {
+    text-align: center;
+    padding: var(--espaciado-extra-grande) var(--espaciado-grande); /* 40px 20px */
+    margin-bottom: var(--espaciado-muy-grande); /* 40px */
+    
+    /* Colores Específicos para la Landing Page */
+    background: linear-gradient(135deg, var(--color-resalte-principal), var(--color-resalte-oscuro)); 
+    color: var(--color-blanco);
+    border-radius: var(--radio-borde-grande); /* 12px */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+}
+.encabezado-bienvenida h1 { 
+    font-size: 2.2rem; /* 35.2px */
+    margin-bottom: var(--espaciado-pequeno); /* 10px */
+    color: var(--color-blanco); /* Sobrescribe el color-principal por color-blanco */
+}
+.encabezado-bienvenida p { 
+    font-size: 1.1rem; /* 17.6px */
+    opacity: 0.95; 
+    line-height: 1.5;
+}
+
+/* 9.2 Cuadrícula de Módulos (2x2) */
+.contenedor-modulos {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en escritorio */
+}
+
+/* 9.3 Tarjetas de Módulo */
+.tarjeta-modulo {
+    padding: var(--margen-contenido); /* 30px */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Usa estilos base de .tarjeta si está definida en el HTML */
+    max-width: none; /* Sobrescribe el max-width de .tarjeta para que funcione en la grilla */
+    margin: 0; /* Sobrescribe los márgenes de .tarjeta */
+}
+.tarjeta-modulo:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+.tarjeta-modulo h3 {
+    font-size: 1.5rem;
+    color: var(--color-texto); /* Color oscuro */
+    margin-bottom: 15px;
+    border-left: 5px solid var(--color-resalte-principal); /* Verde en el borde */
+    padding-left: 10px;
+    font-weight: var(--grosor-fuente-negrita);
+}
+.tarjeta-modulo .descripcion {
+    color: var(--color-texto-claro);
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Detalles Técnicos */
+.detalles-tecnicos {
+    font-size: 1rem; 
+    color: var(--color-texto-claro);
+    margin-top: 15px;
+    padding: 15px; 
+    background-color: var(--color-resalte-claro); /* Fondo claro verde */
+    border-radius: 6px;
+    border: 1px solid var(--color-resalte-principal);
+}
+.detalles-tecnicos ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin: 5px 0 0 0;
+}
+.detalles-tecnicos ul li {
+    margin-bottom: 8px;
+}
+.resaltado-tecnologia {
+    font-weight: var(--grosor-fuente-negrita);
+    color: #000000; 
+}
+
+/* Botón de Acción Específico para la Tarjeta */
+.boton-accion {
+    background-color: var(--color-resalte-principal); /* Utiliza el color verde de la landing */
+    padding: 14px 20px;
+    margin-top: 25px;
+    border-radius: var(--radio-borde-grande); /* Borde más cuadrado */
+    font-weight: var(--grosor-fuente-negrita);
+    text-transform: uppercase;
+}
+.boton-accion:hover {
+    background-color: var(--color-resalte-oscuro);
+    transform: translateY(-2px);
+}
+
+/* ======================================================= */
+/* 10. Diseño Responsive */
+/* ======================================================= */
+
+/* Tablet y Escritorio Pequeño */
+@media (max-width: 992px) {
+    .contenedor-modulos {
+        grid-template-columns: 1fr; /* Una sola columna para más espacio vertical */
+    }
+}
+
+/* Móvil */
+@media (max-width: 768px) {
+    .contenedor-navegacion {
+        flex-direction: column;
+        gap: var(--espaciado-mediano);
+    }
+    
+    .menu-navegacion {
+        gap: var(--espaciado-grande);
+    }
+    
+    .contenedor-principal {
+        padding: var(--espaciado-muy-grande) var(--espaciado-mediano);
+    }
+    
+    h1 {
+        font-size: var(--tamano-fuente-extra-grande);
+    }
+    
+    h2 {
+        font-size: var(--tamano-fuente-grande);
+    }
+
+    /* Ajustes específicos de la cuadrícula para la landing en móvil */
+    .contenedor-modulos {
+        grid-template-columns: 1fr; /* Asegura 1 columna en móvil */
+        gap: 20px;
+    }
+}
+
+/* Móvil más Pequeño */
+@media (max-width: 576px) {
+    .menu-navegacion {
+        flex-direction: column;
+        gap: var(--espaciado-mediano);
+        text-align: center;
+    }
+    
+    .boton {
+        width: 100%;
+    }
+    
+    .contenedor-navegacion,
+    .contenedor-principal {
+        padding-left: var(--espaciado-mediano);
+        padding-right: var(--espaciado-mediano);
+    }
+} 

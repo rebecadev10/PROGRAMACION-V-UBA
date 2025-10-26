@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Principal | Actividad Sumativa 2</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tareas.css">
+    
+
+</head>
+<body>
+    
+    <main class="contenedor-principal">
+        
+        <div class="encabezado-bienvenida">
+            <h1>Panel de Módulos | Actividad Sumativa 2 </h1>
+            <p>
+                ¡Bienvenido! Esta es una aplicación productiva que integra cuatro módulos funcionales. 
+                A continuación, se detalla la tecnología utilizada en cada componente para su evaluación.
+            </p>
+        </div>
+
+        <div class="contenedor-modulos">
+
+            <div class="tarjeta tarjeta-modulo">
+                <div>
+                    <h3> 1. Gestor de Tareas</h3>
+                    <p class="descripcion">
+                        Aplicación *To-Do List* que permite añadir, completar y eliminar tareas, incluyendo un sistema de filtrado.
+                    </p>
+                    <div class="detalles-tecnicos">
+                        <ul>
+                            <li><span class="resaltado-tecnologia">Persistencia de Datos:</span> Manejo de la clave `STORAGE_KEY` y <span class="resaltado-tecnologia">`localStorage`</span> para guardar y cargar el estado.</li>
+                            <li><span class="resaltado-tecnologia">Estructura de Datos:</span> Uso de <span class="resaltado-tecnologia">`Array`</span> de objetos para el almacenamiento.</li>
+                            <li><span class="resaltado-tecnologia">Filtrado:</span> Funciones para mostrar tareas Pendientes, Completadas o Todas.</li>
+                            <li><span class="resaltado-tecnologia">Manipulación de DOM:</span> <span class="resaltado-tecnologia">`renderizarTareas()`</span> y funciones auxiliares para actualización.</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="tareas.html" class="boton boton-accion">Comenzar</a>
+            </div>
+
+            <div class="tarjeta tarjeta-modulo">
+                <div>
+                    <h3>2. Citas Inspiradoras</h3>
+                    <p class="descripcion">
+                        Un generador que proporciona frases motivacionales y citas famosas en inglés, traducidas por el usuario.
+                    </p>
+                    <div class="detalles-tecnicos">
+                        <ul>
+                            <li><span class="resaltado-tecnologia">API Externa:</span> Consumo de la <span class="resaltado-tecnologia">API de ZenQuotes (`zenquotes.io`)</span>.</li>
+                            <li><span class="resaltado-tecnologia">Proxy CORS:</span> Uso del servicio <span class="resaltado-tecnologia">`api.allorigins.win/raw`</span> para evitar problemas de política de origen cruzado (CORS).</li>
+                            <li><span class="resaltado-tecnologia">Asincronía:</span> Manejo de solicitudes con <span class="resaltado-tecnologia">`fetch`, `async/await`</span> y <span class="resaltado-tecnologia">Promesas</span>.</li>
+                            <li><span class="resaltado-tecnologia">Manejo de Errores:</span> Implementación de <span class="resaltado-tecnologia">`try...catch`</span> para gestionar fallos de red o de API.</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="citas.html" class="boton boton-accion">Ver Cita</a>
+            </div>
+
+            <div class="tarjeta tarjeta-modulo">
+                <div>
+                    <h3> 3. Conversor de Divisas</h3>
+                    <p class="descripcion">
+                        Herramienta para obtener tasas de cambio actualizadas y realizar conversiones de moneda.
+                    </p>
+                    <div class="detalles-tecnicos">
+                        <ul>
+                            <li><span class="resaltado-tecnologia">API Externa:</span> Consumo de una <span class="resaltado-tecnologia">API Pública de Tasas de Cambio</span> (Se asume un servicio similar a ZenQuotes).</li>
+                            <li><span class="resaltado-tecnologia">Asincronía:</span> Uso de <span class="resaltado-tecnologia">Promesas</span> y <span class="resaltado-tecnologia">`fetch`</span> para la gestión de solicitudes.</li>
+                            <li><span class="resaltado-tecnologia">Proxy:</span> Petición gestionada a través de un *proxy* para evitar errores de CORS y proteger claves.</li>
+                            <li><span class="resaltado-tecnologia">Lógica de Negocio:</span> Cálculos de conversión y formateo de monedas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="divisas.html" class="boton boton-accion">Probar Conversión</a>
+            </div>
+
+            <div class="tarjeta tarjeta-modulo">
+                <div>
+                    <h3>4. Cuestionario Interactivo</h3>
+                    <p class="descripcion">
+                        Reto rápido de conocimiento con preguntas enfocadas, ofreciendo *feedback* inmediato y puntuación final.
+                    </p>
+                    <div class="detalles-tecnicos">
+                        <ul>
+                            <li><span class="resaltado-tecnologia">Fuente de Datos:</span> Carga de preguntas desde un archivo <span class="resaltado-tecnologia">JSON local</span> (`preguntasTrivia.json`).</li>
+                            <li><span class="resaltado-tecnologia">Asincronía:</span> Uso de <span class="resaltado-tecnologia">`fetch`</span> para cargar el archivo JSON.</li>
+                            <li><span class="resaltado-tecnologia">Lógica de Juego:</span> Implementación de contadores, validación de respuestas y sistema de <span class="resaltado-tecnologia">puntuación</span>.</li>
+                            <li><span class="resaltado-tecnologia">Aleatoriedad:</span> Funcionalidad para seleccionar y <span class="resaltado-tecnologia">mezclar preguntas al azar</span>.</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="cuestionario.html" class="boton boton-accion">Comenzar Reto</a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="pie-pagina">
+        <p>Desarrollado por Rebeca Rodríguez | UBA - Programación V | 2025</p>
+    </footer>
+</body>
+</html>

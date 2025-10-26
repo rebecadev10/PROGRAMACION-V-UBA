@@ -1,0 +1,83 @@
+<!-- Ejercicio 6 un administrador de tareas basico  Rebeca Rodriguez 30051282 -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Sumativa 1 - Rebeca Rodríguez
+
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tareas.css">
+
+</head>
+<body>
+   
+     <nav class="barra-navegacion">
+        <div class="contenedor-navegacion">
+           
+            <ul class="menu-navegacion">
+                <li><a href="index.html" class="enlace-navegacion">Inicio</a></li>
+                <li><a href="citas.html" class="enlace-navegacion">Cita del dia</a></li>
+                <li><a href="divisas.html" class="enlace-navegacion">Conversor</a></li>
+                <li><a href="cuestionario.html" class="enlace-navegacion">Trivia</a></li>
+               
+            </ul>
+        </div>
+    </nav>
+    <main class="contenedor-principal">
+        <h1>Administrador de Lista de Tareas</h1>
+        
+        <div class="tarjeta">
+            <h2>Agregar Nueva Tarea</h2>
+            <div class="grupo-formulario">
+                <label for="nuevaTarea" class="etiqueta-formulario">Descripción de la tarea:</label>
+                <input type="text" id="nuevaTarea" class="control-formulario" placeholder="Escribe una nueva tarea...">
+                <div id="mensajeErrorInput" class="mensaje-error-input">Por favor, ingresa una descripción para la tarea.</div>
+            </div>
+            <button class="boton" id="agregarTarea">Agregar Tarea</button>
+        </div>
+        
+        <div class="tarjeta">
+            <h2>Lista de Tareas</h2>
+  
+            <div class="filtros-tareas">
+                <button class="boton-filtro activo" id="filtroTodas">Todas las Tareas</button>
+                <button class="boton-filtro" id="filtroPendientes">Tareas Pendientes</button>
+                <button class="boton-filtro" id="filtroCompletadas">Tareas Completadas</button>
+            </div>
+
+          
+            
+            <div class="lista-tareas" id="listaTareas">
+                </div>
+            
+            <div id="mensaje" class="mensaje"></div>
+             <h3>Resumen:</h3>
+            <div class="contadores">
+                <div class="contador">
+                    <div class="contador-numero" id="totalTareas">0</div>
+                    <div class="contador-texto">Total</div>
+                </div>
+                <div class="contador">
+                    <div class="contador-numero" id="tareasPendientes">0</div>
+                    <div class="contador-texto">Pendientes</div>
+                </div>
+                <div class="contador">
+                    <div class="contador-numero" id="tareasCompletadas">0</div>
+                    <div class="contador-texto">Completadas</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>Desarrollado por Rebeca Rodríguez | UBA - Programación V | 2025</p>
+    </footer>
+</body>
+
+</html>
+<script src="./js/gestorTarea.js"></script>

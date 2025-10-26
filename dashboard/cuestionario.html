@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto de Conocimiento - Cuestionario Interactivo</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tareas.css">
+    
+    <link rel="stylesheet" href="./css/cuestionario.css">
+    
+</head>
+<body>
+     <nav class="barra-navegacion">
+        <div class="contenedor-navegacion">
+           
+            <ul class="menu-navegacion">
+                <li><a href="index.html" class="enlace-navegacion">Inicio</a></li>
+                <li><a href="tareas.html" class="enlace-navegacion">Tareas</a></li>
+                <li><a href="citas.html" class="enlace-navegacion">Cita del dia</a></li>
+                <li><a href="divisas.html" class="enlace-navegacion">Conversor</a></li>
+                
+               
+            </ul>
+        </div>
+    </nav>
+    <main class="contenedor-principal">
+        <h1>Reto de Conocimiento 🧠</h1>
+        
+        <div id="contenedor-quiz" class="tarjeta contenedor-quiz">
+            
+            <h2 id="titulo-quiz">Conociendo a Venezuela</h2>
+            
+            <div class="info-progreso">
+                <p id="contador-pregunta" class="contador-pregunta"></p>
+                <p id="puntuacion-actual" class="puntuacion-actual">Puntos: 0</p>
+            </div>
+            
+            <hr class="separador-quiz">
+            
+            <div id="area-pregunta" class="area-pregunta">
+                <p id="texto-pregunta" class="texto-pregunta">Esperando API...</p>
+                
+                <div id="contenedor-opciones" class="contenedor-opciones">
+                    </div>
+                
+                <div id="feedback-mensaje" class="feedback-mensaje" style="display: none;">
+                    </div>
+
+                <button id="botonSiguiente" class="boton boton-siguiente" disabled>Siguiente Pregunta</button>
+            </div>
+            
+            <div id="area-resultado-final" class="area-resultado-final" style="display: none;">
+                <h3 id="titulo-final" class="titulo-final">¡Cuestionario Terminado!</h3>
+                <p id="resumen-puntuacion" class="resumen-puntuacion"></p>
+                <button id="botonReiniciar" class="boton boton-reiniciar">Reiniciar Reto</button>
+            </div>
+
+        </div>
+    </main>
+
+    
+    <footer class="pie-pagina">
+        <p>Desarrollado por Rebeca Rodríguez | UBA - Programación V | 2025</p>
+    </footer>
+</body>
+</html>
+<script src="./js/cuestionario.js"></script>
