@@ -1,3 +1,4 @@
+# * Ejercicio5 Juego adivinanzas de colores Por: Rebeca rodríguez. Para: ProgramacionV-UBA *
 import tkinter as tk
 import random
 

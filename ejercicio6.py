@@ -1,3 +1,4 @@
+# * Ejercicio6 Gestor de Tareas Pendientes  Por: Rebeca rodríguez. Para: ProgramacionV-UBA *
 import tkinter as tk
 from tkinter import messagebox
 from tkinter import filedialog

@@ -1,3 +1,4 @@
+# * Ejercicio1Generador de calendario. Por: Rebeca rodríguez. Para: ProgramacionV-UBA * 
 import tkinter as tk
 from tkinter import messagebox
 import calendar

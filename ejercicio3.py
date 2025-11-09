@@ -1,3 +1,4 @@
+# * Ejercicio3 Agenda de contactos. Por: Rebeca rodríguez. Para: ProgramacionV-UBA *
 import tkinter as tk
 from tkinter import messagebox
 from tkinter import scrolledtext # Para mostrar todos los contactos de forma legible

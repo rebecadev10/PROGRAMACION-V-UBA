@@ -1,3 +1,4 @@
+# * Ejercicio2Generador de códigos QR. Por: Rebeca rodríguez. Para: ProgramacionV-UBA *
 import tkinter as tk
 from tkinter import messagebox, colorchooser, filedialog
 import qrcode
